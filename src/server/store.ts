@@ -1,10 +1,19 @@
 import fs from 'fs';
+import os from 'os';
 import path from 'path';
 import type { StoreState, StoredUser } from './seed.ts';
 import { createInitialStoreState } from './seed.ts';
 import type { UserProfile } from '../types/ecommerce.ts';
 
-const DATA_DIR = path.resolve(process.cwd(), '.data');
+function resolveDataDir(): string {
+  // Vercel and read-only serverless runtimes only permit writes under /tmp
+  if (process.env.VERCEL === '1' || process.env.VERCEL_ENV) {
+    return path.join(os.tmpdir(), 'kova-data');
+  }
+  return path.resolve(process.cwd(), '.data');
+}
+
+const DATA_DIR = resolveDataDir();
 const STORE_PATH = path.join(DATA_DIR, 'kova-store.json');
 
 class StoreRepository {
@@ -38,7 +47,7 @@ class StoreRepository {
       }
       fs.writeFileSync(STORE_PATH, JSON.stringify(nextState, null, 2), 'utf8');
     } catch (err) {
-      console.error('Failed to persist store state:', err);
+      console.warn('Store persistence skipped (read-only filesystem):', err);
     }
   }
 
