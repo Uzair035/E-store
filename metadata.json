@@ -1,0 +1,6 @@
+{
+  "name": "KOVA — Modern E-Commerce Platform",
+  "description": "Full-stack modern international e-commerce platform with curated collections, multi-filter catalog, cart & multi-method checkout, customer accounts, order tracking, and admin dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
