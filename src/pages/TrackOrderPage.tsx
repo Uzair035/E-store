@@ -13,10 +13,10 @@ const STAGES: { key: OrderStatus; label: string }[] = [
 ];
 
 export function TrackOrderPage() {
-  useDocumentMeta('Track Order — KOVA', 'Track real-time shipping status and carrier updates for your KOVA order.');
+  useDocumentMeta('Track Order — NOVA', 'Track real-time shipping status and carrier updates for your NOVA order.');
 
   const { search } = useRouter();
-  const initialOrder = new URLSearchParams(search).get('order') || 'KOVA-1042';
+  const initialOrder = new URLSearchParams(search).get('order') || 'NOVA-1042';
 
   const [orderInput, setOrderInput] = useState(initialOrder);
   const [order, setOrder] = useState<Order | null>(null);
@@ -53,8 +53,8 @@ export function TrackOrderPage() {
         <p className="text-xs font-semibold uppercase tracking-wider text-zinc-500">Logistics</p>
         <h1 className="text-3xl font-bold text-zinc-900 mt-1">Track Your Order</h1>
         <p className="text-sm text-zinc-600 mt-1">
-          Enter your KOVA order number (for example <span className="font-mono">KOVA-1042</span> or{' '}
-          <span className="font-mono">KOVA-1043</span>) to view live carrier milestones.
+          Enter your NOVA order number (for example <span className="font-mono">NOVA-1042</span> or{' '}
+          <span className="font-mono">NOVA-1043</span>) to view live carrier milestones.
         </p>
       </div>
 
@@ -71,7 +71,7 @@ export function TrackOrderPage() {
             type="text"
             value={orderInput}
             onChange={(e) => setOrderInput(e.target.value.toUpperCase())}
-            placeholder="KOVA-1042"
+            placeholder="NOVA-1042"
             className="w-full pl-10 pr-4 py-2.5 text-sm font-mono uppercase border border-zinc-300 rounded-md focus:outline-none focus:border-zinc-900"
           />
         </div>

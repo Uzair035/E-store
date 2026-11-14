@@ -37,7 +37,7 @@ export function ShopPage() {
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
 
   useDocumentMeta(
-    'Shop Catalog — KOVA',
+    'Shop Catalog — NOVA',
     'Filter and explore studio audio, horology, leather goods, espresso hardware, and home lighting.'
   );
 
@@ -259,7 +259,7 @@ export function ShopPage() {
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-6 border-b border-zinc-200">
         <div>
           <p className="text-xs font-semibold uppercase tracking-wider text-zinc-500">
-            KOVA Catalog
+            NOVA Catalog
           </p>
           <h1 className="text-3xl font-bold text-zinc-900 mt-1">
             {offerOnly

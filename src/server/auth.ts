@@ -2,7 +2,7 @@ import crypto from 'crypto';
 import type { Request, Response, NextFunction } from 'express';
 import type { UserRole } from '../types/ecommerce.ts';
 
-const TOKEN_SECRET = process.env.AUTH_SECRET || 'kova-dev-ephemeral-signing-key-2026';
+const TOKEN_SECRET = process.env.AUTH_SECRET || 'nova-dev-ephemeral-signing-key-2026';
 
 export function hashPassword(password: string): string {
   const salt = crypto.randomBytes(16).toString('hex');
@@ -62,7 +62,7 @@ export function parseCookieToken(cookieHeader?: string): string | null {
   const cookies = cookieHeader.split(';');
   for (const part of cookies) {
     const [k, ...rest] = part.trim().split('=');
-    if (k === 'kova_token') {
+    if (k === 'nova_token') {
       return decodeURIComponent(rest.join('='));
     }
   }

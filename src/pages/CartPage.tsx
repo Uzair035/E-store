@@ -7,7 +7,7 @@ import type { Coupon } from '../types/ecommerce.ts';
 import { MediaImage } from '../components/MediaImage.tsx';
 
 export function CartPage() {
-  useDocumentMeta('Shopping Bag — KOVA', 'Review items in your shopping bag, apply promo codes, and proceed to checkout.');
+  useDocumentMeta('Shopping Bag — NOVA', 'Review items in your shopping bag, apply promo codes, and proceed to checkout.');
 
   const { navigate } = useRouter();
   const {
@@ -162,7 +162,7 @@ export function CartPage() {
 
             <form onSubmit={handleApplyCoupon} className="space-y-2">
               <label className="block text-xs font-medium text-zinc-700">
-                Promo Code (try <span className="font-mono font-semibold">KOVA15</span>)
+                Promo Code (try <span className="font-mono font-semibold">NOVA15</span>)
               </label>
               <div className="flex gap-2">
                 <div className="relative flex-1">

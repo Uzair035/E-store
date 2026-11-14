@@ -42,7 +42,7 @@ const DEFAULT_PAYMENT_SETTINGS: PaymentGatewaySettings = {
   activeCardProvider: 'stripe',
   cardEnabled: true,
   bankTransferEnabled: true,
-  bankAccountName: 'KOVA Commerce International Ltd.',
+  bankAccountName: 'NOVA Commerce International Ltd.',
   bankName: 'Mercury / Citi Commercial Banking',
   bankIban: 'US89-CITB-0004-8921-4402',
   bankSwift: 'CITIUS33',
@@ -53,8 +53,8 @@ const DEFAULT_PAYMENT_SETTINGS: PaymentGatewaySettings = {
   freeShippingThreshold: 150,
 };
 
-const CART_STORAGE_KEY = 'kova_cart_items';
-const GUEST_WISHLIST_KEY = 'kova_guest_wishlist';
+const CART_STORAGE_KEY = 'nova_cart_items';
+const GUEST_WISHLIST_KEY = 'nova_guest_wishlist';
 
 const StoreContext = createContext<StoreContextValue | null>(null);
 

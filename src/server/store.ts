@@ -8,13 +8,13 @@ import type { UserProfile } from '../types/ecommerce.ts';
 function resolveDataDir(): string {
   // Vercel and read-only serverless runtimes only permit writes under /tmp
   if (process.env.VERCEL === '1' || process.env.VERCEL_ENV) {
-    return path.join(os.tmpdir(), 'kova-data');
+    return path.join(os.tmpdir(), 'nova-data');
   }
   return path.resolve(process.cwd(), '.data');
 }
 
 const DATA_DIR = resolveDataDir();
-const STORE_PATH = path.join(DATA_DIR, 'kova-store.json');
+const STORE_PATH = path.join(DATA_DIR, 'nova-store.json');
 
 class StoreRepository {
   private state: StoreState;

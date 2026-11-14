@@ -7,7 +7,7 @@ import type { Order } from '../types/ecommerce.ts';
 import { MediaImage } from '../components/MediaImage.tsx';
 
 export function OrderConfirmedPage({ orderNumber }: { orderNumber: string }) {
-  useDocumentMeta(`Order ${orderNumber} Confirmed — KOVA`);
+  useDocumentMeta(`Order ${orderNumber} Confirmed — NOVA`);
 
   const { navigate } = useRouter();
   const { paymentSettings } = useStore();

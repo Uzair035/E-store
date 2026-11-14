@@ -48,8 +48,8 @@ export function ProductDetailPage({ slug }: { slug: string }) {
   const [submittingReview, setSubmittingReview] = useState(false);
 
   useDocumentMeta(
-    data ? `${data.product.name} — KOVA` : 'Product Details — KOVA',
-    data?.product.shortDescription || 'Explore specifications and verified reviews at KOVA.'
+    data ? `${data.product.name} — NOVA` : 'Product Details — NOVA',
+    data?.product.shortDescription || 'Explore specifications and verified reviews at NOVA.'
   );
 
   useEffect(() => {

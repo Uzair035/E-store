@@ -18,7 +18,7 @@ import { AdminPage } from './pages/AdminPage.tsx';
 function AppShell() {
   const { pathname } = useRouter();
   const [announcementText, setAnnouncementText] = useState(
-    'Complimentary Express Shipping on orders over $150 · Use code KOVA15 for 15% off'
+    'Complimentary Express Shipping on orders over $150 · Use code NOVA15 for 15% off'
   );
 
   const isAdminRoute = pathname === '/admin' || pathname.startsWith('/admin/');

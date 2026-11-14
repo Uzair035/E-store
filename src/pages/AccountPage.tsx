@@ -19,7 +19,7 @@ type AuthMode = 'login' | 'register' | 'forgot';
 type AccountTab = 'orders' | 'addresses' | 'wishlist' | 'settings';
 
 export function AccountPage() {
-  useDocumentMeta('Customer Account — KOVA', 'Manage your orders, saved addresses, wishlist, and account settings.');
+  useDocumentMeta('Customer Account — NOVA', 'Manage your orders, saved addresses, wishlist, and account settings.');
 
   const { search, navigate } = useRouter();
   const { user, authLoading, login, register, logout, refreshUser, wishlistIds, notify } = useStore();
@@ -96,7 +96,7 @@ export function AccountPage() {
     setAuthBusy(true);
     try {
       await login(email, password);
-      notify('Welcome back to KOVA', 'success');
+      notify('Welcome back to NOVA', 'success');
     } catch (err: any) {
       setAuthError(err?.message || 'Sign in failed.');
     } finally {
@@ -241,7 +241,7 @@ export function AccountPage() {
               {authMode === 'login'
                 ? 'Access order history, saved addresses, and your wishlist.'
                 : authMode === 'register'
-                ? 'Join KOVA for faster checkout and verified reviews.'
+                ? 'Join NOVA for faster checkout and verified reviews.'
                 : 'Enter your email to verify and set a new password.'}
             </p>
           </div>
@@ -309,12 +309,12 @@ export function AccountPage() {
                 <button
                   type="button"
                   onClick={() => {
-                    setEmail('alex@kova-demo.com');
+                    setEmail('alex@nova-demo.com');
                     setPassword('Customer123!');
                   }}
                   className="w-full py-2 text-xs font-medium border border-zinc-300 rounded-md text-zinc-700 hover:bg-zinc-50"
                 >
-                  Fill Demo Customer (alex@kova-demo.com)
+                  Fill Demo Customer (alex@nova-demo.com)
                 </button>
               </div>
             </form>

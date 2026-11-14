@@ -21,7 +21,7 @@ type ShowcaseTab = 'trending' | 'bestsellers' | 'new' | 'offers';
 
 export function HomePage({ onAnnouncementLoad }: { onAnnouncementLoad?: (text: string) => void }) {
   useDocumentMeta(
-    'KOVA — Curated Modern Commerce',
+    'NOVA — Curated Modern Commerce',
     'Shop studio audio, Swiss horology, leather carry, espresso hardware, and architectural home goods.'
   );
 
@@ -71,9 +71,9 @@ export function HomePage({ onAnnouncementLoad }: { onAnnouncementLoad?: (text: s
     : data.specialOffers;
 
   const handleCopyCode = () => {
-    navigator.clipboard?.writeText('KOVA15').catch(() => {});
+    navigator.clipboard?.writeText('NOVA15').catch(() => {});
     setCopiedCode(true);
-    notify('Copied promo code KOVA15', 'success');
+    notify('Copied promo code NOVA15', 'success');
     window.setTimeout(() => setCopiedCode(false), 2000);
   };
 
@@ -139,7 +139,7 @@ export function HomePage({ onAnnouncementLoad }: { onAnnouncementLoad?: (text: s
               <div className="aspect-[16/9] lg:h-full w-full rounded-xl overflow-hidden border border-zinc-200 bg-zinc-200">
                 <MediaImage
                   imageKey={heroBanner?.imageKey || 'hero-banner'}
-                  alt="KOVA Curated Studio Collection"
+                  alt="NOVA Curated Studio Collection"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -312,7 +312,7 @@ export function HomePage({ onAnnouncementLoad }: { onAnnouncementLoad?: (text: s
               className="text-2xl sm:text-3xl font-bold leading-tight text-white"
               style={{ textWrap: 'balance' }}
             >
-              {promoBanner?.title || 'Upgrade the modern studio desk and save 15% with code KOVA15.'}
+              {promoBanner?.title || 'Upgrade the modern studio desk and save 15% with code NOVA15.'}
             </h2>
             <p className="text-sm text-zinc-300 leading-relaxed max-w-lg">
               {promoBanner?.subtitle ||
@@ -331,7 +331,7 @@ export function HomePage({ onAnnouncementLoad }: { onAnnouncementLoad?: (text: s
                 onClick={handleCopyCode}
                 className="inline-flex items-center gap-2 px-4 py-2.5 text-sm font-mono bg-zinc-800 border border-zinc-700 text-zinc-100 rounded-md hover:bg-zinc-700 transition-colors whitespace-nowrap shrink-0"
               >
-                <span>Code: KOVA15</span>
+                <span>Code: NOVA15</span>
                 {copiedCode ? <Check className="w-4 h-4 text-emerald-400" /> : <Copy className="w-4 h-4" />}
               </button>
             </div>
@@ -339,7 +339,7 @@ export function HomePage({ onAnnouncementLoad }: { onAnnouncementLoad?: (text: s
           <div className="lg:col-span-6 aspect-[16/9] lg:aspect-auto">
             <MediaImage
               imageKey={promoBanner?.imageKey || 'promo-atelier'}
-              alt="KOVA Workspace Collection"
+              alt="NOVA Workspace Collection"
               className="w-full h-full object-cover"
             />
           </div>
@@ -384,7 +384,7 @@ export function HomePage({ onAnnouncementLoad }: { onAnnouncementLoad?: (text: s
         {/* Newsletter Subscription */}
         <div className="bg-zinc-50 border border-zinc-200 rounded-xl p-8 sm:p-10 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
           <div className="max-w-lg">
-            <h2 className="text-xl font-bold text-zinc-900">Subscribe to KOVA Dispatches</h2>
+            <h2 className="text-xl font-bold text-zinc-900">Subscribe to NOVA Dispatches</h2>
             <p className="text-sm text-zinc-600 mt-1">
               Receive early access to small-batch hardware drops, seasonal discounts, and member-only offers.
             </p>

@@ -27,7 +27,7 @@ import type {
 const router = Router();
 
 function setAuthCookie(res: any, token: string) {
-  res.cookie('kova_token', token, {
+  res.cookie('nova_token', token, {
     httpOnly: true,
     sameSite: 'lax',
     path: '/',
@@ -49,7 +49,7 @@ function slugify(value: string): string {
 
 // Health check
 router.get('/health', (_req, res) => {
-  res.json({ ok: true, service: 'kova-commerce-api' });
+  res.json({ ok: true, service: 'nova-commerce-api' });
 });
 
 // ========================
@@ -237,7 +237,7 @@ router.post('/newsletter', (req, res) => {
     s.newsletterEmails.push(email);
     store.save();
   }
-  res.json({ ok: true, message: 'Subscribed to KOVA studio dispatches and early access.' });
+  res.json({ ok: true, message: 'Subscribed to NOVA studio dispatches and early access.' });
 });
 
 // ========================
@@ -304,7 +304,7 @@ router.post('/auth/login', (req, res) => {
 });
 
 router.post('/auth/logout', (_req, res) => {
-  res.clearCookie('kova_token', { path: '/' });
+  res.clearCookie('nova_token', { path: '/' });
   res.json({ ok: true });
 });
 
@@ -612,7 +612,7 @@ router.post('/orders', attachOptionalAuth, (req: AuthenticatedRequest, res) => {
   }
 
   const nextNum = 1045 + s.orders.length;
-  const orderNumber = `KOVA-${nextNum}`;
+  const orderNumber = `NOVA-${nextNum}`;
   const nowIso = new Date().toISOString();
 
   const providerLabel =

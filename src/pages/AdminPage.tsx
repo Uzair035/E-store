@@ -47,7 +47,7 @@ type AdminSection =
   | 'payments';
 
 export function AdminPage() {
-  useDocumentMeta('Admin Console — KOVA Commerce');
+  useDocumentMeta('Admin Console — NOVA Commerce');
 
   const { navigate } = useRouter();
   const { user, login, logout, refreshPaymentSettings, notify } = useStore();
@@ -147,7 +147,7 @@ export function AdminPage() {
       if (logged.role !== 'admin') {
         setAuthError('This account does not have administrator privileges.');
       } else {
-        notify('Signed in to KOVA Admin Console', 'success');
+        notify('Signed in to NOVA Admin Console', 'success');
       }
     } catch (err: any) {
       setAuthError(err?.message || 'Invalid credentials.');
@@ -163,7 +163,7 @@ export function AdminPage() {
         <div className="w-full max-w-md bg-white border border-zinc-200 rounded-xl p-8 space-y-6">
           <div className="flex items-center justify-between">
             <span className="text-lg font-bold tracking-tight text-zinc-900 font-display">
-              KOVA Admin
+              NOVA Admin
             </span>
             <button
               type="button"
@@ -226,12 +226,12 @@ export function AdminPage() {
           <button
             type="button"
             onClick={() => {
-              setAdminEmail('admin@kova-demo.com');
+              setAdminEmail('admin@nova-demo.com');
               setAdminPassword('Admin123!');
             }}
             className="w-full py-2 text-xs font-medium border border-zinc-300 rounded-md text-zinc-700 hover:bg-zinc-50"
           >
-            Fill Demo Admin (admin@kova-demo.com)
+            Fill Demo Admin (admin@nova-demo.com)
           </button>
         </div>
       </div>
@@ -429,7 +429,7 @@ export function AdminPage() {
       <aside className="w-full lg:w-64 bg-white border-b lg:border-b-0 lg:border-r border-zinc-200 flex flex-col shrink-0">
         <div className="h-16 px-5 border-b border-zinc-200 flex items-center justify-between">
           <span className="text-base font-bold text-zinc-900 font-display tracking-tight">
-            KOVA Console
+            NOVA Console
           </span>
           <button
             type="button"

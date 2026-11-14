@@ -7,7 +7,7 @@ import type { Coupon, Order, PaymentMethod, ShippingMethod } from '../types/ecom
 import { MediaImage } from '../components/MediaImage.tsx';
 
 export function CheckoutPage() {
-  useDocumentMeta('Checkout — KOVA', 'Complete your order securely with Card, Bank Transfer, or Cash on Delivery.');
+  useDocumentMeta('Checkout — NOVA', 'Complete your order securely with Card, Bank Transfer, or Cash on Delivery.');
 
   const { search, navigate } = useRouter();
   const { user, cart, cartSubtotal, clearCart, paymentSettings, notify } = useStore();
@@ -528,7 +528,7 @@ export function CheckoutPage() {
                 type="text"
                 value={couponCode}
                 onChange={(e) => setCouponCode(e.target.value.toUpperCase())}
-                placeholder="Promo code (KOVA15)"
+                placeholder="Promo code (NOVA15)"
                 className="flex-1 px-3 py-2 text-xs font-mono uppercase bg-white border border-zinc-300 rounded-md"
               />
               <button

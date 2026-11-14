@@ -11,7 +11,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div className="space-y-4">
             <span className="text-xl font-bold tracking-tight text-white font-display block">
-              KOVA
+              NOVA
             </span>
             <p className="text-sm text-zinc-400 leading-relaxed max-w-xs">
               Curated modern electronics, horology, leather carry, and architectural home objects—shipped worldwide with verified warranty support.
@@ -23,7 +23,7 @@ export function Footer() {
                   e.preventDefault();
                   navigate('/shop');
                 }}
-                aria-label="KOVA Instagram"
+                aria-label="NOVA Instagram"
                 className="p-2 rounded-md bg-zinc-900 text-zinc-400 hover:text-white hover:bg-zinc-800 transition-colors"
               >
                 <Instagram className="w-4 h-4" />
@@ -34,7 +34,7 @@ export function Footer() {
                   e.preventDefault();
                   navigate('/shop');
                 }}
-                aria-label="KOVA X"
+                aria-label="NOVA X"
                 className="p-2 rounded-md bg-zinc-900 text-zinc-400 hover:text-white hover:bg-zinc-800 transition-colors"
               >
                 <Twitter className="w-4 h-4" />
@@ -45,7 +45,7 @@ export function Footer() {
                   e.preventDefault();
                   navigate('/shop');
                 }}
-                aria-label="KOVA YouTube"
+                aria-label="NOVA YouTube"
                 className="p-2 rounded-md bg-zinc-900 text-zinc-400 hover:text-white hover:bg-zinc-800 transition-colors"
               >
                 <Youtube className="w-4 h-4" />
@@ -144,7 +144,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-zinc-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-zinc-500">
-          <p>© {new Date().getFullYear()} KOVA Commerce International. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} NOVA Commerce International. All rights reserved.</p>
           <p>San Francisco · London · Zurich</p>
         </div>
       </div>

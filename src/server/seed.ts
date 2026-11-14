@@ -125,7 +125,7 @@ export function createInitialStoreState(): StoreState {
       sku: 'KV-HOR-02',
       slug: 'meridian-automatic-chronograph',
       name: 'Meridian Calibre 75 Automatic Chronograph',
-      brand: 'KOVA Horology',
+      brand: 'NOVA Horology',
       categorySlug: 'horology',
       categoryName: 'Horology',
       shortDescription: '40mm brushed stainless steel case, slate sunray dial, and sapphire exhibition back.',
@@ -375,7 +375,7 @@ export function createInitialStoreState(): StoreState {
       sku: 'KV-AUD-09',
       slug: 'sonus-desk-studio-dac-bundle',
       name: 'Sonus M4 + Monolith Studio Desk Kit',
-      brand: 'KOVA Curated',
+      brand: 'NOVA Curated',
       categorySlug: 'studio-audio',
       categoryName: 'Studio Audio',
       shortDescription: 'Complete acoustic & tactile desk pairing combining Sonus M4 headphones and Monolith 75.',
@@ -504,7 +504,7 @@ export function createInitialStoreState(): StoreState {
   const coupons: Coupon[] = [
     {
       id: 'coup-1',
-      code: 'KOVA15',
+      code: 'NOVA15',
       description: '15% off sitewide orders over $150',
       type: 'percentage',
       value: 15,
@@ -531,7 +531,7 @@ export function createInitialStoreState(): StoreState {
       id: 'ban-announcement',
       slot: 'announcement',
       kicker: 'Autumn Dispatch',
-      title: 'Complimentary Express Shipping on orders over $150 · Use code KOVA15 for 15% off',
+      title: 'Complimentary Express Shipping on orders over $150 · Use code NOVA15 for 15% off',
       subtitle: '',
       ctaText: 'Shop Offers',
       ctaHref: '/shop?offer=true',
@@ -554,7 +554,7 @@ export function createInitialStoreState(): StoreState {
       id: 'ban-promo',
       slot: 'promo',
       kicker: 'Seasonal Workspace Edit',
-      title: 'Upgrade the modern studio desk and save 15% with code KOVA15.',
+      title: 'Upgrade the modern studio desk and save 15% with code NOVA15.',
       subtitle:
         'Pair CNC aluminum peripherals, solid white oak organizers, and sculpted stoneware lighting—backed by our 3-year hardware guarantee.',
       ctaText: 'Shop Desk & Lighting',
@@ -568,7 +568,7 @@ export function createInitialStoreState(): StoreState {
     {
       id: 'user-customer-1',
       name: 'Alex Mercer',
-      email: 'alex@kova-demo.com',
+      email: 'alex@nova-demo.com',
       role: 'customer',
       phone: '+1 (415) 555-0194',
       passwordHash: hashPassword('Customer123!'),
@@ -615,8 +615,8 @@ export function createInitialStoreState(): StoreState {
     },
     {
       id: 'user-admin-1',
-      name: 'KOVA Operations Admin',
-      email: 'admin@kova-demo.com',
+      name: 'NOVA Operations Admin',
+      email: 'admin@nova-demo.com',
       role: 'admin',
       phone: '+1 (415) 555-0100',
       passwordHash: hashPassword('Admin123!'),
@@ -629,10 +629,10 @@ export function createInitialStoreState(): StoreState {
   const orders: Order[] = [
     {
       id: 'ord-1041',
-      orderNumber: 'KOVA-1041',
+      orderNumber: 'NOVA-1041',
       userId: 'user-customer-1',
       customerName: 'Alex Mercer',
-      customerEmail: 'alex@kova-demo.com',
+      customerEmail: 'alex@nova-demo.com',
       customerPhone: '+1 (415) 555-0194',
       shippingAddress: {
         line1: '480 Howard Street, Suite 4B',
@@ -680,10 +680,10 @@ export function createInitialStoreState(): StoreState {
     },
     {
       id: 'ord-1042',
-      orderNumber: 'KOVA-1042',
+      orderNumber: 'NOVA-1042',
       userId: 'user-customer-1',
       customerName: 'Alex Mercer',
-      customerEmail: 'alex@kova-demo.com',
+      customerEmail: 'alex@nova-demo.com',
       customerPhone: '+1 (415) 555-0194',
       shippingAddress: {
         line1: '480 Howard Street, Suite 4B',
@@ -720,7 +720,7 @@ export function createInitialStoreState(): StoreState {
       ],
       subtotal: 311,
       discountAmount: 46.65,
-      couponCode: 'KOVA15',
+      couponCode: 'NOVA15',
       shippingMethod: 'standard',
       shippingCost: 0,
       codFee: 0,
@@ -742,7 +742,7 @@ export function createInitialStoreState(): StoreState {
     },
     {
       id: 'ord-1043',
-      orderNumber: 'KOVA-1043',
+      orderNumber: 'NOVA-1043',
       userId: 'user-customer-2',
       customerName: 'Elena Rostova',
       customerEmail: 'elena.rostova@example.com',
@@ -760,7 +760,7 @@ export function createInitialStoreState(): StoreState {
           sku: 'KV-HOR-02',
           slug: 'meridian-automatic-chronograph',
           name: 'Meridian Calibre 75 Automatic Chronograph',
-          brand: 'KOVA Horology',
+          brand: 'NOVA Horology',
           imageKey: 'chrono-watch',
           unitPrice: 1095,
           quantity: 1,
@@ -791,7 +791,7 @@ export function createInitialStoreState(): StoreState {
     },
     {
       id: 'ord-1044',
-      orderNumber: 'KOVA-1044',
+      orderNumber: 'NOVA-1044',
       userId: 'user-customer-2',
       customerName: 'Elena Rostova',
       customerEmail: 'elena.rostova@example.com',
@@ -844,7 +844,7 @@ export function createInitialStoreState(): StoreState {
     activeCardProvider: 'stripe',
     cardEnabled: true,
     bankTransferEnabled: true,
-    bankAccountName: 'KOVA Commerce International Ltd.',
+    bankAccountName: 'NOVA Commerce International Ltd.',
     bankName: 'Mercury / Citi Commercial Banking',
     bankIban: 'US89-CITB-0004-8921-4402',
     bankSwift: 'CITIUS33',
@@ -863,7 +863,7 @@ export function createInitialStoreState(): StoreState {
     coupons,
     banners,
     orders,
-    newsletterEmails: ['alex@kova-demo.com'],
+    newsletterEmails: ['alex@nova-demo.com'],
     paymentSettings,
   };
 }

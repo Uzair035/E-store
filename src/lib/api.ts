@@ -1,4 +1,4 @@
-const TOKEN_STORAGE_KEY = 'kova_auth_token';
+const TOKEN_STORAGE_KEY = 'nova_auth_token';
 
 export function getStoredToken(): string | null {
   try {

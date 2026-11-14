@@ -66,7 +66,7 @@ export function Header({ announcementText }: HeaderProps) {
             onClick={() => navigate('/')}
             className="text-xl font-bold tracking-tight text-zinc-900 font-display whitespace-nowrap shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-900 rounded"
           >
-            KOVA
+            NOVA
           </button>
         </div>
 
